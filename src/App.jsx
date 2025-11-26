@@ -1,26 +1,39 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Vision from './components/Vision';
 import KnowMyCheckup from './components/KnowMyCheckup';
 import LegacyOfExcellence from './components/LegacyOfExcellence';
 import TheMyCheckupEdge from './components/TheMyCheckupEdge';
+import ComingSoon from './pages/ComingSoon';
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <main className="container mx-auto px-4">
-        <section id="home" className="my-10">
-          <h1 className="text-4xl font-bold text-center text-blue-700">Welcome to My Checkup</h1>
-        </section>
-        <Vision />
-        <KnowMyCheckup />
-        <LegacyOfExcellence />
-        <TheMyCheckupEdge />
+      <main className="container mx-auto px-4 py-8">
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Vision />
+              <KnowMyCheckup />
+              <LegacyOfExcellence />
+              <TheMyCheckupEdge />
+            </>
+          } />
+          {/* Redirect all other known pages to Coming Soon */}
+          <Route path="/login" element={<Navigate to="/coming-soon" replace />} />
+          <Route path="/tests" element={<Navigate to="/coming-soon" replace />} />
+          <Route path="/packages" element={<Navigate to="/coming-soon" replace />} />
+          <Route path="/coming-soon" element={<ComingSoon />} />
+          {/* Catch all other unknown routes */}
+          <Route path="*" element={<ComingSoon />} />
+        </Routes>
       </main>
       <Footer />
-    </div>
+    </Router>
   );
 }
 

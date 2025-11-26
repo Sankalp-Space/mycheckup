@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaHome, FaSignInAlt, FaFlask, FaBoxOpen, FaEnvelope } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -9,27 +10,27 @@ const Header = () => {
         <nav>
           <ul className="flex space-x-8 text-gray-700 text-lg">
             <li>
-              <a href="#home" className="flex items-center hover:text-blue-600 transition-colors duration-300">
+              <Link to="/" className="flex items-center hover:text-blue-600 transition-colors duration-300">
                 <FaHome className="mr-2" /> Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#login" className="flex items-center hover:text-blue-600 transition-colors duration-300">
+              <Link to="/login" className="flex items-center hover:text-blue-600 transition-colors duration-300">
                 <FaSignInAlt className="mr-2" /> Login/Signup
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#tests" className="flex items-center hover:text-blue-600 transition-colors duration-300">
+              <Link to="/tests" className="flex items-center hover:text-blue-600 transition-colors duration-300">
                 <FaFlask className="mr-2" /> Tests
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#packages" className="flex items-center hover:text-blue-600 transition-colors duration-300">
+              <Link to="/packages" className="flex items-center hover:text-blue-600 transition-colors duration-300">
                 <FaBoxOpen className="mr-2" /> Curated Packages
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="flex items-center hover:text-blue-600 transition-colors duration-300">
+              <a href="mailto:info@mycheckup.co.in" className="flex items-center hover:text-blue-600 transition-colors duration-300">
                 <FaEnvelope className="mr-2" /> Contact Us
               </a>
             </li>
