@@ -25,29 +25,29 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
-          <ul className="flex space-x-1 text-white text-base font-medium">
+          <ul className="flex space-x-1 text-base font-semibold">
             <li>
-              <Link to="/" className="flex items-center px-3 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300 hover:scale-105">
+              <Link to="/" className="flex items-center px-4 py-2 rounded-lg bg-white bg-opacity-15 text-white hover:bg-opacity-30 transition-all duration-300 hover:scale-105">
                 <FaHome className="mr-2" /> Home
               </Link>
             </li>
             <li>
-              <Link to="/login" className="flex items-center px-3 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300 hover:scale-105">
+              <Link to="/login" className="flex items-center px-4 py-2 rounded-lg bg-white bg-opacity-15 text-white hover:bg-opacity-30 transition-all duration-300 hover:scale-105">
                 <FaSignInAlt className="mr-2" /> Login
               </Link>
             </li>
             <li>
-              <Link to="/tests" className="flex items-center px-3 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300 hover:scale-105">
+              <Link to="/tests" className="flex items-center px-4 py-2 rounded-lg bg-white bg-opacity-15 text-white hover:bg-opacity-30 transition-all duration-300 hover:scale-105">
                 <FaFlask className="mr-2" /> Tests
               </Link>
             </li>
             <li>
-              <Link to="/packages" className="flex items-center px-3 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300 hover:scale-105">
+              <Link to="/packages" className="flex items-center px-4 py-2 rounded-lg bg-white bg-opacity-15 text-white hover:bg-opacity-30 transition-all duration-300 hover:scale-105">
                 <FaBoxOpen className="mr-2" /> Packages
               </Link>
             </li>
             <li>
-              <a href="mailto:info@mycheckup.co.in" className="flex items-center px-3 py-2 rounded-lg bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-300 hover:scale-105">
+              <a href="mailto:info@mycheckup.co.in" className="flex items-center px-4 py-2 rounded-lg bg-yellow-300 text-gray-900 font-bold hover:bg-yellow-200 transition-all duration-300 hover:scale-105">
                 <FaEnvelope className="mr-2" /> Contact
               </a>
             </li>
