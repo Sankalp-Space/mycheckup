@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaEnvelope, FaPhone, FaHeartbeat, FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -33,10 +34,10 @@ const Footer = () => {
           >
             <h4 className="text-xl font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li><a href="/" className="hover:text-cyan-400 transition-colors">Home</a></li>
-              <li><a href="/tests" className="hover:text-cyan-400 transition-colors">Tests</a></li>
-              <li><a href="/packages" className="hover:text-cyan-400 transition-colors">Packages</a></li>
-              <li><a href="/login" className="hover:text-cyan-400 transition-colors">Login</a></li>
+              <li><Link to="/" className="hover:text-cyan-400 transition-colors">Home</Link></li>
+              <li><Link to="/tests" className="hover:text-cyan-400 transition-colors">Tests</Link></li>
+              <li><Link to="/packages" className="hover:text-cyan-400 transition-colors">Packages</Link></li>
+              <li><Link to="/login" className="hover:text-cyan-400 transition-colors">Login</Link></li>
             </ul>
           </motion.div>
 

@@ -19,7 +19,7 @@ const LegacyOfExcellence = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 py-20 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 py-20 relative overflow-visible">
       {/* Decorative elements */}
       <div className="absolute top-10 left-10 text-6xl opacity-10">⭐</div>
       <div className="absolute bottom-10 right-10 text-6xl opacity-10">🏆</div>
@@ -29,12 +29,12 @@ const LegacyOfExcellence = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-16 pb-6"
         >
           <div className="inline-block bg-gradient-to-r from-yellow-500 to-orange-500 p-4 rounded-full mb-6">
             <FaTrophy className="text-4xl text-white" />
           </div>
-          <h2 className="text-5xl font-bold bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent mb-4">Legacy of Excellence</h2>
+          <h2 className="text-5xl font-bold bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent mb-4 leading-[1.15]">Legacy of Excellence</h2>
           <p className="text-gray-600 text-lg">Recognized and honored for our commitment to diagnostic excellence</p>
         </motion.div>
 
@@ -48,7 +48,7 @@ const LegacyOfExcellence = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 whileHover={{ y: -8 }}
-                className="bg-white p-10 rounded-2xl shadow-lg hover:shadow-2xl transition-all border-2 border-yellow-200 relative overflow-hidden group"
+                className="bg-white p-10 rounded-2xl shadow-lg hover:shadow-2xl transition-all border-2 border-yellow-200 relative overflow-visible group"
               >
                 <div className="absolute top-0 right-0 -mr-10 -mt-10 w-32 h-32 bg-yellow-100 rounded-full opacity-0 group-hover:opacity-50 transition-all"></div>
                 

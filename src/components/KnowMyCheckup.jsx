@@ -17,9 +17,9 @@ const KnowMyCheckup = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-12"
+          className="mb-12 pb-6"
         >
-          <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-6">Know MyCheckup</h2>
+          <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-6 leading-[1.15]">Know MyCheckup</h2>
           <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
       <p>
               <span className="font-semibold text-blue-600">MyCheckup</span> is built on a simple promise—bringing accurate, reliable, and affordable diagnostic testing straight to your doorstep. We combine advanced laboratory technology with seamless home sample collection to make preventive healthcare effortless and accessible.

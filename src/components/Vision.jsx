@@ -12,7 +12,7 @@ const Vision = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 py-20 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 py-20 relative overflow-visible">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
@@ -22,12 +22,12 @@ const Vision = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-16 pb-6"
         >
           <div className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 p-4 rounded-full mb-6 shadow-lg">
             <FaEye className="text-4xl text-white" />
           </div>
-          <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-4">Our Vision</h2>
+          <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-4 leading-[1.15]">Our Vision</h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">Transforming healthcare through accessible, reliable diagnostics for every Indian home</p>
         </motion.div>
 

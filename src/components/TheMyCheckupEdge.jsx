@@ -56,7 +56,7 @@ const TheMyCheckupEdge = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-20 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-20 relative overflow-visible">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -66,12 +66,12 @@ const TheMyCheckupEdge = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-16 pb-6"
         >
           <div className="inline-block bg-gradient-to-r from-cyan-400 to-blue-400 p-4 rounded-full mb-6">
             <FaFlask className="text-4xl text-white" />
           </div>
-          <h2 className="text-5xl font-bold text-white mb-4">The MyCheckup Edge</h2>
+          <h2 className="text-5xl font-bold text-white mb-4 leading-[1.15]">The MyCheckup Edge</h2>
           <p className="text-cyan-200 text-lg max-w-2xl mx-auto">Why thousands trust us for their diagnostic needs</p>
         </motion.div>
 

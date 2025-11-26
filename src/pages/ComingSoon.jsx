@@ -2,7 +2,7 @@ import React from 'react';
 
 const ComingSoon = () => {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
+    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-visible">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
@@ -29,7 +29,7 @@ const ComingSoon = () => {
 
         {/* Text content */}
         <div className="text-center space-y-4">
-          <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-purple-300 via-pink-300 to-blue-300 bg-clip-text text-transparent animate-pulse">
+          <h1 className="text-6xl md:text-7xl font-bold leading-relaxed bg-gradient-to-r from-purple-300 via-pink-300 to-blue-300 bg-clip-text text-transparent animate-pulse">
             Coming Soon
           </h1>
           <p className="text-lg md:text-xl text-gray-300 font-light leading-relaxed">
