@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <main className="container mx-auto px-4 py-8">
+      <main>
         <Routes>
           <Route path="/" element={
             <>
